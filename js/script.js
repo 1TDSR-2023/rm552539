@@ -1,12 +1,15 @@
 
+//var nome = "Ruan";
+//let nome2 = "Boris";
 
-var nome1 = "Petroni";
-//let nome2 = "Derick";
-//const nome3 = "Ruan";
+//Regra 1 : INICIALIZAR NA DESCLARAÇÃO;
+//Regra 2 : NÃO ALTERAR O SEU VALOR DURANTE O FLUXO DO PROGRAMA;
 
-if(nome1 != ""){
-    let nome1 = "Geovana";
-}
+//var nome1 = "Petroni";
 
-console.log(nome1);
+//if(nome1 != ""){
+//    let nome1 = "Geovana";
+//
+
+//console.log(nome1);
 
