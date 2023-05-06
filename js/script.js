@@ -109,5 +109,5 @@ let nr3 = [...nr1,...nr2];
 console.log("array 3 : " + nr3);
 
 nr3.forEach( (nr)=>{
-  console.log ('Item do Array 3 : ${nr}');
+  console.log (`Item do Array 3 : ${nr}`);
     });
