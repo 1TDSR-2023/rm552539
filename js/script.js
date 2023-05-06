@@ -3,7 +3,11 @@
 // //let nome2 = "Boris";
 
 // //Regra 1 : INICIALIZAR NA DESCLARAÇÃO;
+<<<<<<< HEAD
 // //Regra 2 : NÃO ALTERAR O SEU VALOR DURANTE O FLUXO DO PROGRAMA;
+=======
+// //Regra 2 : NÃO ALTERAR O sSEU VALOR DURANTE O FLUXO DO PROGRAMA;
+>>>>>>> df5696257bb8a2b639545b59fbca49671b63741a
 
 // //var nome1 = "Petroni";
 
@@ -41,15 +45,24 @@
 // //querySelector
 // //querySelectorAll
 // //Array
+<<<<<<< HEAD
 // //Estruturas de 
 
 // //Declarar um Araay
 // let frutas ["banana", "maca", "pessego", "laranja", "melancia","Kiwi"]
+=======
+// //Estruturas de repetição
+
+// //Declarar um Array
+// let frutas = ["banana", "maçã","pêssego","laranja","limão","melância","kiwi"];
+// //Imprimindo o array
+>>>>>>> df5696257bb8a2b639545b59fbca49671b63741a
 // console.log(frutas);
 // console.table(frutas);
 // console.log(frutas[0]);
 // console.log(frutas[6]);
 
+<<<<<<< HEAD
 // //deseja um Item final do array com o metodo push(nomeDoItem)
 // frutas.push("manga");
 // console.log(frutas);
@@ -111,3 +124,38 @@ console.log("array 3 : " + nr3);
 nr3.forEach( (nr)=>{
   console.log (`Item do Array 3 : ${nr}`);
     });
+
+// //Inserir um item no final do array com o método push e NomeDoItem
+// frutas.push("manga");
+// console.log(frutas);
+
+// //Inserir um item no inicio do array com o método unshift e NomeDoItem
+// frutas.unshift("pitaya");
+// console.log(frutas);
+
+// //Remover um item do final do array com metodo pop
+// frutas.pop();
+// console.log(frutas);
+
+// //Remover um item do inicio do array com metodo shift
+// frutas.shift();
+// console.log(frutas);
+
+// //Localizar um item no array utilizando o método indexOf(nomeDoItem);
+// //Obs: Este método retorna o índice do item encontrado.
+
+// //let indice = frutas.indexOf("laranja")
+// //console.log(`O indice encontrado foi: ${indice}`);
+// //console.log(`O item buscado foi: ${frutas[indice]}`);
+
+// //Realizando uma remoção de item utilizando o método splice().
+// //O método splice() recebe dois parâmetros, indice do item que será removido e a 
+// //quantidade de vezes que este mesmo indice será removido. Ex: splice(indice, 12);
+
+// //Dica:Utilize o método indexOf() para buscar o indice do item no array:
+// let indice = frutas.indexOf("melancia");
+// console.log(`O item encontrado no indice antes da remoção foi: ${frutas[indice]}`);
+// frutas.splice(indice, 1);
+// console.log(frutas);
+// console.log(`O item encontrado no indice depois da remoção foi: ${frutas[indice]}`);
+>>>>>>> df5696257bb8a2b639545b59fbca49671b63741a
