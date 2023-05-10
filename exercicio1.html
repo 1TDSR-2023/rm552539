@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio1 - JS</title>
-    <script src="./js/exercicio1.js" defer></script>
+    <title>Document</title>
+    <script src="js/exercicio1.js" defer></script>
 </head>
-<body>
+<body id="corpo">
     <p> Questão 1:</p>
     <button id="meu-btn">CLICK</button>
-
+    <p> Questão 2:</p>
     <div>
         <form action="index.html" method="GET" onsubmit="return false">    
             <fieldset>     
-                <legend>Contato</legend>  
-                <div>  
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
-                </div> 
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                </div>
-                <button type="button" onclick="adicionarContato()">Enviar</button>    
+                <legend>Contato</legend>      
+                    <div>      
+                        <label for="nome">Nome:</label>     
+                        <input type="text" id="nome" placeholder="Digite seu nome" required> 
+                        <label for="email">Email:</label>      
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                        <button type="button" onclick="adicionarItem()">Enviar</button>
+                    </div>  
+                
             </fieldset>     
-        </form> 
-        <ul id="listaContatos"></ul>
+        </form>
+        <ul id="lista"></ul>  
     </div> 
+    <p> Questão 3:</p>
+    <img id="imagem_lobo" src="img/lobo3.jpg" alt="Lobo" title="Imagem Lobo5">
+	<button id="btn-trocar">Clique Aqui</button>
+
+    <p> Questão 4:</p>
+    <div>
+        <button onclick="exibirMensagem()">Clique Aqui</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <p> Questão 5:</p>
+    <div>
+    <p id="ocultarElemento">Ocultar elemento.</p>
+	<button onclick="ocultarElemento()">Clique Aqui</button>
+    </div>
     
-      
-    <p>Questão 3: </p>
-    <img id="img" src="img/lobo4.jpg" alt="Lobo">
-    <button id="meu-btn2">CLICK</button>
-
-    <p>Questão 4:</p>
-    <p id="var_p"></p>
-    <button id="meu-btn3">CLICK</button>
-
-    <p>Questão 5:</p>
-    <button id="meu-btn4">CLICK</button>
-
 </body>
-
 </html>

@@ -1,62 +1,59 @@
-//Questão 1
-let tela = document.getElementById("meu-btn")
+let botao = document.getElementById("meu-btn");
+console.log(botao.textContent);
 
-tela.addEventListener("click", function(){
+botao.addEventListener("click",function(){ 
 
-    let r = 0, g = 0, b = 0;
+
+    let r=0,g=0,b=0;
     r = Math.round(Math.random()*255);
     g = Math.round(Math.random()*255);
     b = Math.round(Math.random()*255);
+    
+    //this.setAttribute("style",`background-color:rgb(${r},${g},${b});`);
+    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 
-    let botao = document.querySelector("body");
+} );
+ 
+function adicionarItem() {
 
-    botao.setAttribute("style", `background-color:rgb(${r},${g},${b});`);
-
-//Questao 2
-function contato() {
-
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-
-    let novoItem = document.createElement("li");
-    let spanNome = document.createElement("span");
-    let spanEmail = document.createElement("span");
-    spanNome.textContent = nome;
-    spanEmail.textContent = email;
-    novoItem.appendChild(spanNome);
-    novoItem.appendChild(document.createTextNode(" - "));
-    novoItem.appendChild(spanEmail);
-
-    let lista = document.getElementById("listaContatos");
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let lista = document.getElementById('lista');
+    
+    let novoItem = document.createElement('li');
+    novoItem.innerText = 'Nome: ' + nome + ', E-mail: ' + email;
+    
     lista.appendChild(novoItem);
-
-    document.getElementById("nome").value = "";
-    document.getElementById("email").value = "";
+    
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
 }
 
-})
+let btn_trocar = document.getElementById("btn-trocar");
 
-//Questão 3
-let botao2 = document.getElementById("meu-btn2");
+    btn_trocar.addEventListener("click",function() {
+        let img = document.querySelector("#imagem_lobo")
 
-botao2.addEventListener("click", function(){
-    let img = document.querySelector("#img")
-    img.setAttribute('src', 'img/lobo1.jpg');
+        if (img.getAttribute("src") == './img/lobo2.jpg') {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/lobo3.jpg');
+        }
+         else {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/lobo4.jpg');
+         };
+    });
 
-})
+function exibirMensagem() {
+    var elementoMensagem = document.getElementById('mensagem');
+    elementoMensagem.textContent = "Mensagem exibida ao clicar no botão!";
+}
 
-//Questão 4
-let botao3 = document.getElementById("meu-btn3");
-
-botao3.addEventListener("click", function(){
-    let mudar = document.querySelector("#var_p");
-    mudar.textContent = "Hello World";
-})
-
-//Questão 5
-let botao4 = document.getElementById("meu-btn4");
-
-botao4.addEventListener("click", function(){
-    let ocultar = document.querySelector("#img");
-    ocultar.style.display = 'none';
-})
+function ocultarElemento() {
+    let paragrafo = document.getElementById("ocultarElemento");
+    if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+    } else {
+        paragrafo.style.display = "none";
+    }
+}
